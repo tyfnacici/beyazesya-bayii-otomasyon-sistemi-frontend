@@ -1,15 +1,11 @@
-import {InputText} from "primereact/inputtext";
-import {useState} from "react";
+import Login from "./pages/Login.jsx";
 
-function App() {
-  const [text,setText] = useState("");
+const App = () => {
   return (
-    <div className="text-3xl font-bold ">
-      <p>Hello world</p>
-      <InputText value={text} onChange={e => setText(e.target.value)}/>
-      {text}
+    <div className="h-screen flex justify-center items-center">
+      {/* <Login /> */}
     </div>
   );
-}
+};
 
 export default App;
